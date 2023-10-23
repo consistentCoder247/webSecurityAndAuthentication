@@ -1,0 +1,16 @@
+<h1>Login</h1>
+
+{{#if messages.error}}
+<b>{{messages.error}}</b>
+{{/if}}
+<form action="/login" method="post">
+<label for="email">Email: </label>
+<input type="email" name="email" id="email">
+<label for="password">Password: </label>
+<input type="password" name="password" id="password">
+<button type="submit" name="submit">Login</button>
+</form>
+<hr>
+<a href="/auth/google" target="_blank">SIGNUP WITH GOOGLE</a>
+<hr>
+<a href="/register">Register</a>

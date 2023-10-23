@@ -1,0 +1,16 @@
+GET http://localhost:3000/users
+
+###
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name": "Mridul Dhiman",
+    "email" : "dhimanmridul91@gmail.com",
+    "password": "18Er$ErK"
+}
+
+###
+
+GET http://localhost:3000/users/google

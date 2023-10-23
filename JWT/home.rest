@@ -1,0 +1,25 @@
+POST http://localhost:4000/register
+Content-Type: application/json
+
+{
+    "username": "Mridul",
+    "password": "helloeveryone"
+}
+
+###
+
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1yaWR1bCIsInBhc3N3b3JkIjoiaGVsbG9ldmVyeW9uZSIsImlhdCI6MTY4ODgxODM0NywiZXhwIjoxNjg4ODE4MzYyfQ.DIZCFIXCw_VpLrlYyfCQ1MUA9lsbSN2NFT5IdzzrqRY
+
+###
+
+GET http://localhost:3000/
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json 
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ik1yaWR1bCIsInBhc3N3b3JkIjoiaGVsbG9ldmVyeW9uZSIsImlhdCI6MTY4ODgxODM0NywiZXhwIjoxNjg4ODE4MzYyfQ.DIZCFIXCw_VpLrlYyfCQ1MUA9lsbSN2NFT5IdzzrqRY"
+}

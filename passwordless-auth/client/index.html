@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Passwordless Auth</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+	<div class="container">
+        <h1 class="title">welcome</h1>
+        <p class="description">Login to our page</p>
+        <div class="form-box">
+            <div class="input-main">
+               
+              <form action="" id="sign-up-form">
+				<input type="email" name="email" id="email" placeholder="Enter Email">
+                <input type="tel" name="phone" id="phone" placeholder="Enter phone number">
+                
+            </div>
+            <a class="phone__link">Enter phone number instead</a>
+            <button class="submit" name="submit" type="submit">Submit</button>
+			  </form>
+        </div>
+    </div>
+
+    <div class="container two">
+      <h1 class="title">Welcome Back</h1>
+        <p class="description">Enter OTP</p>
+        <div class="form-box" style="height: fit-content;">
+            <div class="input-main">
+                <img src="key_icon.jpg" width="16" height="16" class="bi bi-envelope"/>
+              <form class="otp-form" id="sign-up-form">
+				<input type="number" name="otp" id="otp" placeholder="Enter your OTP">
+            </div>
+            <button class="submit otp" name="submit-otp" type="submit">Submit</button>
+			  </form>
+        </div>
+    </div>
+    <div class="modal-parent">
+        <div class="modal">
+            <p class="modal__description"></p>
+            <span class="x" draggable="true">&times;</span>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+</html>
